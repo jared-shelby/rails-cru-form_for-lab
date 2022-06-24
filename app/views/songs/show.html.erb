@@ -1,6 +1,7 @@
 
 <h1> <%= @song.name %> </h1>
-
+<%= link_to @genre.name, genre_path(@genre) %> <br>
+<%= link_to @artist.name, artist_path(@artist) %> <br>
 <%= link_to "Edit this Song", edit_song_path %> <br>
 
 <%= button_to "Delete Song", song_path(@song), method: :delete %>
